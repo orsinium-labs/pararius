@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "pararius"
+license = "MIT"
+author = "Gram"
+author-email = "gram@orsinium.dev"
+home-page = "https://github.com/orsinium-labs/pararius"
+description-file = "README.md"
+requires-python = ">=3.6"
+keywords = "pararius,nl,house,appartment"
+requires = ["requests"]
+
+classifiers=[
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Plugins",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.flit.metadata.requires-extra]
+test = ["pytest"]
+
+[tool.isort]
+profile = "django"
+lines_after_imports = 2
+skip = ".venvs/"
